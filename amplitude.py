@@ -45,7 +45,7 @@ def absolute_value(coeff_array, omega_array):
         result = 0
         for i in range(len(coeff_array)):
             result += coeff_array[i] * (cmath.cos(o) + j * cmath.sin(o))**(len(coeff_array) - i - 1)
-        absolute_array.append(result)
+        absolute_array.append(cmath.sqrt(result))
     return absolute_array
 
 
